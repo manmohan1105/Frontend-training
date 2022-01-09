@@ -1,0 +1,18 @@
+<app-home></app-home>
+<h1>Enter the amount to convert<h1>
+<input type="number" [(ngModel)]="inamount"/>
+<!-- <h3>choose the currency<h3> -->
+<select   [(ngModel)]="incurr">
+  <option *ngFor="let curr of allcurr">{{curr}}</option>
+</select>
+
+
+<br>
+
+<input type="number" [(ngModel)]="outamount"/>
+<!-- <h1>choose the currency you want to convert</h1> -->
+<select   [(ngModel)]="outcurr">
+  <option *ngFor="let curr of allcurr">{{curr}}</option>
+</select>
+<br>
+<button (click)="onconvert()">convert</button>
