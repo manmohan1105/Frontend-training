@@ -1,0 +1,21 @@
+<p>child works!</p>
+<!-- {{demodata}} -->
+<table>
+    <tr>
+      <th>UserId</th>
+      <th>id</th>
+      <th>title</th>
+      <th>body</th>
+    </tr>
+    <!-- <h1 *ngFor="let d of demodata"> -->
+        <tr *ngFor="let d of demodata">
+            <td>{{d.userId}}</td>
+            <td>{{d.id}}</td>
+            <td>{{d.title}}</td>
+            <td>{{d.body}}</td>
+          </tr>
+    <!-- </h1> -->
+    
+   
+  </table>
+<!-- <h1 *ngFor="let d of demodata">{{d.userId}}</h1> -->
