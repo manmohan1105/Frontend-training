@@ -1,0 +1,24 @@
+<p>myservice works!</p>
+<table>
+    <tr>
+      <th>UserId</th>
+      <th>name</th>
+      <th>DOB</th>
+      
+    </tr>
+    
+        <tr *ngFor="let d of record1">
+            <td>{{d.userId}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.date}}</td>
+           
+          </tr>
+   
+  
+   
+  </table>
+
+ 
+ <button (click)="submit()"> Sort</button>
+ 
+ 

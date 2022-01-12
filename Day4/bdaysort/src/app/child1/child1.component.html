@@ -1,0 +1,10 @@
+<p>child works!</p>
+   
+
+<form #userForm="ngForm" (ngSubmit)="submit(userForm)">
+  <td> 
+    <input type="radio" value="name1" name="criteria" [ngModel]="criteria" required #criteria="ngModel"> name
+          <input type="radio" value="date1" name="criteria" [ngModel]="criteria" required #criteria="ngModel"> date
+
+</td> 
+<button>Select parameter for sorting</button>
